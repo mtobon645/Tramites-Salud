@@ -5,81 +5,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trámites Salud Colombia | Gestión Legal ante EPS</title>
     <meta name="description" content="¿Problemas con tu EPS? Te ayudamos en la redacción de tutelas y derechos de petición para agilizar medicamentos, citas y cirugías en Colombia.">
-    <!-- Tailwind CSS vía CDN -->
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome para Íconos -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        institucional: '#0f172a', // Azul muy oscuro (confianza/legal)
-                        accion: '#2563eb', // Azul brillante (clics)
+                        juridico: '#0b132b', // Azul noche profundo (Autoridad)
+                        urgencia: '#d90429', // Rojo alerta (Acción)
+                        whatsapp: '#25D366'  // Verde oficial WA
                     }
                 }
             }
         }
     </script>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans antialiased">
+<body class="bg-gray-100 text-gray-800 font-sans antialiased relative">
 
-    <!-- Header Minimalista -->
-    <header class="bg-white shadow-sm border-b border-gray-200">
-        <div class="max-w-5xl mx-auto px-4 py-4 flex justify-between items-center">
-            <h1 class="text-2xl font-bold text-institucional tracking-tight">Trámites Salud <span class="text-accion">Colombia</span></h1>
+    <!-- Header Institucional -->
+    <header class="bg-juridico shadow-md border-b-4 border-urgencia">
+        <div class="max-w-5xl mx-auto px-4 py-4 flex justify-center md:justify-start items-center">
+            <h1 class="text-2xl font-black text-white tracking-tight uppercase">
+                Trámites <span class="text-urgencia">Salud</span> Colombia
+            </h1>
         </div>
     </header>
 
-    <!-- Sección Hero (Propuesta de Valor) -->
-    <main class="max-w-5xl mx-auto px-4 py-12 md:py-20">
+    <!-- Sección Hero (Psicología del Dolor) -->
+    <main class="max-w-5xl mx-auto px-4 py-16 md:py-24">
         <div class="text-center mb-16">
-            <h2 class="text-4xl md:text-5xl font-extrabold text-institucional leading-tight mb-4">
-                No esperes meses por la atención que mereces
+            <span class="bg-red-100 text-urgencia font-bold px-4 py-1 rounded-full text-sm uppercase tracking-wider mb-4 inline-block shadow-sm">Atención Legal Prioritaria</span>
+            <h2 class="text-4xl md:text-5xl font-extrabold text-juridico leading-tight mb-6 mt-4">
+                La burocracia de tu EPS no puede jugar con tu salud
             </h2>
-            <p class="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
-                Asesoría y redacción técnica de documentos legales para solicitar formalmente a tu EPS la entrega de medicamentos y asignación de citas. <strong>Pagas solo si aceptamos y procesamos tu caso.</strong>
+            <p class="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto font-medium">
+                Redactamos los mecanismos legales exactos (Derechos de Petición y Tutelas) para obligar al sistema a responder. <br class="hidden md:block">
+                <span class="text-juridico font-bold border-b-2 border-urgencia">Evaluamos tu caso sin compromiso. Solo pagas si el trámite es viable.</span>
             </p>
         </div>
 
-        <!-- Tarjetas de Conversión (Taxonomía) -->
+        <!-- Tarjetas de Alta Conversión -->
         <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             
-            <!-- Card 1: Farmacia / Medicamentos -->
-            <div class="bg-white rounded-xl shadow-lg border border-gray-100 p-8 flex flex-col hover:shadow-xl transition-shadow">
-                <div class="text-4xl mb-4">💊</div>
-                <h3 class="text-2xl font-bold text-institucional mb-3">Retraso en Medicamentos</h3>
-                <p class="text-gray-600 mb-6 flex-grow">
-                    ¿Problemas con la entrega en la farmacia? Te ayudamos a redactar el documento legal exacto para solicitar la entrega urgente ante tu EPS.
+            <!-- Card 1: Medicamentos -->
+            <div class="bg-white rounded-2xl shadow-xl border-l-8 border-juridico p-8 flex flex-col hover:-translate-y-1 hover:shadow-2xl transition-all duration-300">
+                <div class="flex items-center mb-4">
+                    <i class="fa-solid fa-pills text-4xl text-juridico mr-4"></i>
+                    <h3 class="text-2xl font-bold text-juridico">Medicamentos Negados</h3>
+                </div>
+                <p class="text-gray-600 mb-6 flex-grow text-lg">
+                    ¿La farmacia dice que "no hay sistema" o está agotado? Exigimos la entrega de tu fórmula médica amparados en la Ley Estatutaria 1751.
                 </p>
-                <!-- Reemplazar 573000000000 con tu número real -->
-                <a href="https://wa.me/573000000000?text=Hola%20Tr%C3%A1mites%20Salud,%20necesito%20ayuda%20urgente%20porque%20mi%20EPS%20no%20me%20entrega%20los%20medicamentos." 
+                <a href="https://wa.me/573000000000?text=Hola,%20necesito%20evaluar%20mi%20caso.%20Mi%20EPS%20no%20me%20entrega%20mis%20medicamentos." 
                    target="_blank"
-                   class="bg-accion hover:bg-blue-700 text-white font-bold py-3 px-4 rounded text-center transition-colors">
-                    Solicitar ayuda con medicamentos
+                   class="bg-juridico hover:bg-gray-900 text-white font-bold py-4 px-4 rounded-lg text-center transition-colors shadow-md text-lg">
+                    <i class="fa-brands fa-whatsapp mr-2"></i> Reportar falla en farmacia
                 </a>
             </div>
 
-            <!-- Card 2: Clínicas / Especialistas -->
-            <div class="bg-white rounded-xl shadow-lg border border-gray-100 p-8 flex flex-col hover:shadow-xl transition-shadow">
-                <div class="text-4xl mb-4">⚕️</div>
-                <h3 class="text-2xl font-bold text-institucional mb-3">Citas y Cirugías</h3>
-                <p class="text-gray-600 mb-6 flex-grow">
-                    ¿Llevas meses esperando una cita con especialista o cirugía? Gestionamos el recurso legal adecuado para exigir agilidad en tu atención.
+            <!-- Card 2: Especialistas / Cirugías -->
+            <div class="bg-white rounded-2xl shadow-xl border-l-8 border-urgencia p-8 flex flex-col hover:-translate-y-1 hover:shadow-2xl transition-all duration-300">
+                <div class="flex items-center mb-4">
+                    <i class="fa-solid fa-user-doctor text-4xl text-urgencia mr-4"></i>
+                    <h3 class="text-2xl font-bold text-juridico">Citas y Cirugías</h3>
+                </div>
+                <p class="text-gray-600 mb-6 flex-grow text-lg">
+                    ¿Meses esperando una autorización o especialista? Radicamos el recurso técnico para exigir atención oportuna y saltar los bloqueos administrativos.
                 </p>
-                <!-- Reemplazar 573000000000 con tu número real -->
-                <a href="https://wa.me/573000000000?text=Hola%20Tr%C3%A1mites%20Salud,%20necesito%20ayuda%20para%20agilizar%20una%20cita%20con%20especialista/cirug%C3%ADa." 
+                <a href="https://wa.me/573000000000?text=Hola,%20necesito%20evaluar%20mi%20caso.%20Tengo%20retrasos%20con%20una%20cita%20m%C3%A9dica/cirug%C3%ADa." 
                    target="_blank"
-                   class="bg-accion hover:bg-blue-700 text-white font-bold py-3 px-4 rounded text-center transition-colors">
-                    Iniciar gestión de cita / cirugía
+                   class="bg-urgencia hover:bg-red-700 text-white font-bold py-4 px-4 rounded-lg text-center transition-colors shadow-md text-lg animate-pulse">
+                    <i class="fa-brands fa-whatsapp mr-2"></i> Exigir cita o procedimiento
                 </a>
             </div>
 
         </div>
     </main>
 
-    <!-- Footer Simple -->
-    <footer class="bg-institucional py-8 text-center text-gray-400 text-sm mt-12">
-        <p>© 2026 Trámites Salud Colombia. Servicio de acompañamiento legal.</p>
-        <p class="mt-2 text-xs opacity-75">No somos una EPS ni entidad gubernamental.</p>
+    <!-- Botón Flotante WhatsApp -->
+    <a href="https://wa.me/573000000000?text=Hola%20Tr%C3%A1mites%20Salud.%20Necesito%20asesor%C3%ADa%20con%20mi%20EPS." 
+       target="_blank" 
+       class="fixed bottom-6 right-6 bg-whatsapp text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform z-50 flex items-center justify-center h-16 w-16">
+        <i class="fa-brands fa-whatsapp text-3xl"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-8 text-center text-gray-400 text-sm mt-12 border-t border-gray-800">
+        <p class="font-bold text-gray-300">© 2026 Trámites Salud Colombia.</p>
+        <p class="mt-2 text-xs opacity-75 max-w-2xl mx-auto px-4">Servicio de redacción y acompañamiento jurídico de medio, no de resultado. No somos una EPS ni entidad del Estado.</p>
     </footer>
 
 </body>
